@@ -4,10 +4,14 @@ public class SumOverArray {
 
 	public static int IterateAndSum(int[] arr) {
 		int sum=0;
-		for(int a : arr) {
-			sum+=a;	
-		}System.out.println(sum);
-		return sum;
 		
+		if(arr == null) {
+			sum = 0;
+		}else{
+			for(int a : arr) {
+				sum+=a;	
+			}
+		}
+		return sum;
 	}
 }
